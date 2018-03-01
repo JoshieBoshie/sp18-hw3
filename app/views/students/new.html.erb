@@ -1,0 +1,17 @@
+<%= form_tag students_path do %>
+  <%= label_tag(:full_name, "Full name") %>
+  <%= text_field_tag(:full_name) %>
+
+  <%= label_tag(:course_name, "Course name") %>
+  <%= text_field_tag(:course_name, nil, placeholder: @placeholder_course) %>
+
+  <%= label_tag(:how_screwed_level, "How screwed are you for this course??") %>
+  <%= text_field_tag(:how_screwed_level) %>
+
+  <%= label_tag(:da_wae, "Do u no da_wae") %>
+  <%= text_field_tag(:da_wae) %>
+
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+  <%= submit_tag("Create teacher") %>
+<% end %>
