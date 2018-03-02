@@ -5,7 +5,8 @@
 
 2. Go to `localhost:3000/teachers` in your browser; why does this not work?
   In routes, /teachers only works when we call #create after a user has inputed
-  information.
+  information. More importantly, this is a post request, when we need to make
+  a get request to go directly to the url for the user.
 
 3. What type of request did your browser just perform?
   A POST request
